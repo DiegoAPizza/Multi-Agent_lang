@@ -18,3 +18,28 @@ Le haces una pregunta y el sistema:
 4. 📝 **Genera** un informe estructurado con fuentes
 
 ## 🏗️ Arquitectura
+
+
+### Agentes
+
+| Agente | Función | Tecnología |
+|--------|---------|------------|
+| **Buscador** | Búsqueda web | DuckDuckGo + Groq |
+| **Crítico** | Evalúa suficiencia | Prompt + Groq (sin herramientas externas) |
+| **Redactor** | Genera informe estructurado | Prompt + Groq |
+
+## 🚀 Tecnologías utilizadas
+
+- **LangChain** - Framework para aplicaciones LLM
+- **LangGraph** - Orquestación multi-agente con estado compartido
+- **Groq** - LLM gratuito (llama-3.3-70b-versatile)
+- **DuckDuckGo** - Búsqueda web sin API key
+- **Python 3.11+** - Lenguaje principal
+
+## 📦 Instalación
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/DiegoAPizza/Multi-Agent_lang.git
+cd Multi-Agent_lang
